@@ -63,7 +63,7 @@ The hackathon submission covers the full checkout interface and the AI conversat
 
 What is planned for Phase 2:
 
-- Nomba Checkout API integration (virtual accounts, webhooks)
+- **Nomba Checkout integration** — the payment gateway (virtual accounts, webhooks, and transaction processing via Nomba's API) has not been integrated during Phase 1. This is the next priority. Once connected, payments will flow directly to the merchant's Nomba virtual account with automatic reconciliation.
 - Live AI model connection (DeepSeek or equivalent)
 - Multi-currency conversion
 - Receipt generation
