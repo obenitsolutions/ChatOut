@@ -4,7 +4,7 @@
 
 ChatOut is a privacy-first conversational checkout system. Instead of clicking through a traditional cart and payment form, users chat with an assistant that helps them discover products, manage their cart, and complete purchases. The checkout can be embedded into an existing shop via an iframe, or deployed as a standalone storefront reachable through a single link.
 
-The project was built for the [DevCareer x Nomba Hackathon 2026](https://developer.nomba.com). A live demo is running at **[chatout.com](https://chatout.com)**.
+The project was built for the [DevCareer x Nomba Hackathon 2026](https://developer.nomba.com). A live demo is running at **[chatout.obenitsolutions.com](https://chatout.obenitsolutions.com)**.
 
 > The full source code will be published here after the hackathon judging period ends. The hackathon submission deadline is July 8, 2026. Judging and Demo Day follow around July 18. We are keeping the codebase private until the evaluation process is complete.
 
