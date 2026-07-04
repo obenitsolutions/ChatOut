@@ -83,7 +83,7 @@ What is planned for Phase 2:
 
 **Emmanuel Oben** — [obenitsolutions.com](https://obenitsolutions.com)
 
-Built as part of the ChatOut project for the Nomba Hackathon 2026. The system will be integrated into the [Sales Ledger](https://github.com/obenitsolutions) platform as its native conversational checkout, while remaining publicly available for any developer to embed into their own application.
+Built as part of the ChatOut project for the Nomba Hackathon 2026. The system will be integrated into the [Sales Ledger](https://www.salesledger.app) platform as its native conversational checkout, while remaining publicly available for any developer to embed into their own application.
 
 ## License
 
