@@ -1,0 +1,15 @@
+/* =================================================================
+   ChatOut — Typography
+   Self-hosted Space Grotesk variable font (same family used by
+   the salescatalog project, copied from /public/fonts/).
+   Variable file: a single woff2-equivalent .ttf covers 300–700.
+   ================================================================= */
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/SpaceGrotesk-Variable.ttf') format('truetype-variations'),
+       url('/fonts/SpaceGrotesk-Variable.ttf') format('truetype');
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}

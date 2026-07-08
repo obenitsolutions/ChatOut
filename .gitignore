@@ -1,0 +1,97 @@
+# ChatOut — Root .gitignore
+
+# =============================================================================
+# Dependencies
+# =============================================================================
+node_modules/
+.pnp/
+.pnp.js
+
+# =============================================================================
+# Build output
+# =============================================================================
+frontend/dist/
+backend/dist/
+
+# =============================================================================
+# Secrets & environment — NEVER commit real credentials
+# =============================================================================
+.env
+.env.local
+.env.*.local
+*.env
+!*.env.example
+backend/.env
+backend/.env.production
+backend/.env.*
+!backend/.env.example
+production/.env
+site-mode.env
+
+# =============================================================================
+# Runtime / generated data (databases, logs)
+# =============================================================================
+backend/data/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+backend/logs/
+logs/
+*.log
+
+# =============================================================================
+# Namecheap deploy pipeline — NOT part of the public source.
+# deploy.py and its generated output folders are specific to our
+# Namecheap cPanel/Passenger deployment and contain baked env/zips.
+# =============================================================================
+deploy.py
+production/
+production_data/
+deploy_backups/
+
+# =============================================================================
+# Python cache (from deploy.py)
+# =============================================================================
+__pycache__/
+*.pyc
+
+# =============================================================================
+# Internal-only docs & hackathon material (paths, credentials, prompts)
+# These are private working files, not part of the public project.
+# =============================================================================
+docs/numbers_api_keys.txt
+docs/SALESLEDGER_NUMERS_INTEGRATION.md
+docs/task.txt
+docs/commands.txt
+docs/integrations/
+artifacts/
+plans/
+shared/
+
+# =============================================================================
+# Editor / OS
+# =============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# =============================================================================
+# PRIVATE AI AGENT — never push this to the public GitHub repo
+# =============================================================================
+# The `ai-agent/` folder contains the private RAG / conversational AI
+# pipeline that powers ChatOut. It is intentionally NOT part of the
+# public repository because it includes proprietary prompt engineering
+# and retrieval logic that we want to keep internal.
+#
+# If you are forking ChatOut for your own storefront, you should leave
+# `ai-agent/` out of version control and either:
+#   (a) Drop in your own implementation that follows the public
+#       contract documented in `ai-agent/PLUGIN.md`, or
+#   (b) Point the backend's `AI_GATEWAY_URL` env var at a hosted
+#       AI service (DeepSeek, OpenAI, Anthropic, etc.).
+# =============================================================================
+ai-agent/

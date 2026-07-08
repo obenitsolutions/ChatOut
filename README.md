@@ -6,7 +6,7 @@ ChatOut is a privacy-first conversational checkout system. Instead of clicking t
 
 The project was built for the [DevCareer x Nomba Hackathon 2026](https://developer.nomba.com). A live demo is running at **[chatout.obenitsolutions.com](https://chatout.obenitsolutions.com)**.
 
-> The full source code will be published here after the hackathon judging period ends. The hackathon submission deadline is July 8, 2026. Judging and Demo Day follow around July 18. We are keeping the codebase private until the evaluation process is complete.
+Payments are powered by [Nomba](https://developer.nomba.com). A merchant onboards a bank account, ChatOut verifies it and provisions a Nomba virtual account, and customers pay through Nomba hosted checkout. See **[docs/INTEGRATION_GUIDE.md](docs/INTEGRATION_GUIDE.md)** for the full integration walkthrough.
 
 ---
 
@@ -24,10 +24,11 @@ This de-anonymization pipeline is the core of the system. It means merchants can
 
 On top of this privacy foundation, ChatOut provides:
 
-- **JSON-driven integration.** A host app sends shop details and a product catalog as a JSON payload. ChatOut operates on that data independently. No shared database, no tight coupling.
+- **JSON-driven integration.** A host app exposes its catalog through one endpoint (the ChatOut Catalog Protocol). ChatOut fetches shop details and products and operates on that data independently. No shared database, no tight coupling.
 - **A product grid with search, filters, and categories.** Users can browse the catalog directly, not just through chat.
 - **A real-time cart** that persists across page reloads and stays in sync with the chat assistant.
 - **A pluggable AI gateway.** The frontend talks to a single `/api/chat` endpoint. Swap the model on the backend without touching the UI. The demo ships with a keyword-based response engine that works offline; connecting a real LLM is a matter of setting two environment variables.
+- **Nomba payments, end to end.** Merchants onboard a bank account (verified by a read-only Flutterwave account-name lookup), ChatOut provisions a Nomba virtual account, and customers pay through Nomba hosted checkout. Orders are reconciled automatically from Nomba webhooks. Payment routing is resolved server-side from a slug, so a customer can never redirect funds by editing the URL.
 - **Dark and light themes.** The dark theme is the default. The layout caps at 1200 pixels wide, designed for clean iframe embedding.
 
 ## Architecture
@@ -35,20 +36,23 @@ On top of this privacy foundation, ChatOut provides:
 The system is a standard Vue 3 frontend with a Node.js backend, built to run independently of any host platform.
 
 ```
-Host App  →  JSON payload (shop + products)
-                ↓
-ChatOut Frontend (Vue 3 + Pinia)  ←→  ChatOut Backend (Express + SQLite)
-                ↓                              ↓
-         Product Grid + Chat UI        /api/chat  →  AI Gateway (pluggable)
-                                       Anonymization layer (PII protection)
-                                       Nomba Payment API (phase 2)
+Host App  ──(1) Catalog Protocol JSON──►  ChatOut Backend (Express + SQLite)
+                                               │
+Customer ─► ChatOut Frontend (Vue 3 + Pinia) ──┤  /api/chat      → AI Gateway (pluggable)
+              #/s/<merchant-slug>              │  /api/storefront → dynamic catalog fetch
+                     │                         │  /api/checkout   → Nomba hosted checkout
+                     ▼                         │  /api/merchants  → KYC + virtual account
+              Product Grid + Chat UI           │  /api/webhook/nomba → payment reconciliation
+                                               │  Anonymization layer (PII protection)
+                                               ▼
+                                        Nomba API  +  Flutterwave (KYC only)
 ```
 
-The frontend uses hash-based routing, so it works inside iframes without the host app needing to configure URL rewrites. The backend serves the built frontend as static files and exposes a handful of API endpoints.
+The frontend uses hash-based routing, so it works inside iframes without the host app needing to configure URL rewrites. The backend serves the built frontend as static files and exposes the API endpoints listed in the integration guide.
 
-## Current status (Phase 1)
+## Current status
 
-The hackathon submission covers the full checkout interface and the AI conversation layer. What is implemented:
+Implemented:
 
 - 50-product demo catalog with real African fashion images
 - Product grid with category tabs, search, sort, and pagination
@@ -58,15 +62,17 @@ The hackathon submission covers the full checkout interface and the AI conversat
 - Intelligent keyword-based chat responses (offline demo mode)
 - PII anonymization pipeline (email, phone, card, address detection)
 - Pluggable AI gateway contract (`POST /api/chat`)
+- **Nomba integration** — OAuth token flow, virtual account provisioning, hosted checkout order creation, and webhook-based order reconciliation
+- **Merchant onboarding with KYC** — read-only Flutterwave bank-account name resolution with tolerant name matching
+- **Dynamic multi-merchant storefronts** — `#/s/<slug>` loads any host merchant's catalog through the Catalog Protocol
 - Dark/light theme toggle with localStorage persistence
-- Namecheap production deployment pipeline
 
-What is planned for Phase 2:
+Planned next:
 
-- **Nomba Checkout integration** — the payment gateway (virtual accounts, webhooks, and transaction processing via Nomba's API) has not been integrated during Phase 1. This is the next priority. Once connected, payments will flow directly to the merchant's Nomba virtual account with automatic reconciliation.
-- Live AI model connection (DeepSeek or equivalent)
+- Live AI model connection (DeepSeek or equivalent) in the default deployment
 - Multi-currency conversion
 - Receipt generation
+- Split payments to per-merchant sub-accounts (production settlement)
 
 ## Tech stack
 
@@ -75,9 +81,11 @@ What is planned for Phase 2:
 | Frontend | Vue 3.5 (Composition API), Vite 8, Pinia 3, Vue Router 5 |
 | Styling | Vanilla CSS with design tokens (glass-morphism theme) |
 | Backend | Node.js, Express 5, SQLite 3 |
+| Payments | Nomba API (OAuth, virtual accounts, hosted checkout, webhooks) |
+| KYC | Flutterwave account-name resolution (read-only) |
 | AI gateway | Pluggable — demo mode uses keyword matching; swap to any LLM via env vars |
 | Privacy | Custom PII anonymizer/de-anonymizer (regex-based, Map-backed) |
-| Deployment | Python deploy script + Bash staging/promote/rollback for Namecheap cPanel |
+| Deployment | Node process behind any reverse proxy (Passenger, Nginx, PM2, etc.) |
 
 ## Author
 

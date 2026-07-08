@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0A0E27" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#F5F4F0" media="(prefers-color-scheme: light)" />
+
+  <title>ChatOut — Conversational Checkout | Talk. Shop. Pay. Seamlessly.</title>
+  <meta name="title" content="ChatOut — Conversational Checkout | Talk. Shop. Pay. Seamlessly." />
+  <meta name="description" content="ChatOut is the AI-powered conversational checkout. Drop it into your storefront as an iframe or run it standalone. Users talk to a smart assistant, get recommendations, fill their cart, and pay in one flow." />
+  <meta name="keywords" content="conversational checkout, AI shopping assistant, embedded checkout, iframe checkout, chat commerce, storefront payments, Nomba" />
+  <meta name="author" content="ChatOut — built for the Nomba Hackathon 2026" />
+  <meta name="robots" content="index, follow" />
+  <meta name="application-name" content="ChatOut" />
+  <meta name="apple-mobile-web-app-title" content="ChatOut" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="canonical" href="https://chatout.app/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://chatout.app/" />
+  <meta property="og:title" content="ChatOut — Conversational Checkout" />
+  <meta property="og:description" content="Talk. Shop. Pay. Seamlessly. The AI-powered conversational checkout for modern storefronts." />
+  <meta property="og:image" content="https://chatout.app/og-image.png" />
+  <meta property="og:image:secure_url" content="https://chatout.app/og-image.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="ChatOut — Conversational Checkout banner" />
+  <meta property="og:site_name" content="ChatOut" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:see_also" content="https://github.com/chatout/chatout" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://chatout.app/" />
+  <meta name="twitter:title" content="ChatOut — Conversational Checkout" />
+  <meta name="twitter:description" content="Talk. Shop. Pay. Seamlessly. The AI-powered conversational checkout for modern storefronts." />
+  <meta name="twitter:image" content="https://chatout.app/og-image.png" />
+  <meta name="twitter:image:alt" content="ChatOut — Conversational Checkout banner" />
+  <meta name="twitter:site" content="@chatout" />
+  <meta name="twitter:creator" content="@chatout" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" href="/logo.png" />
+  <link rel="shortcut icon" href="/logo.png" />
+  <link rel="apple-touch-icon" href="/logo.png" />
+  <link rel="mask-icon" href="/logo_with_text.png" color="#FF6B4A" />
+
+  <!--
+    Pre-init theme detection — must run BEFORE the app mounts.
+    Resolves: stored preference > OS prefers-color-scheme > default dark.
+    This prevents a flash of incorrect theme on first paint.
+  -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('chatout.theme');
+        var theme;
+        if (stored === 'light' || stored === 'dark') {
+          theme = stored;
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+          theme = 'light';
+        } else {
+          theme = 'dark';
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute('content', theme === 'light' ? '#F5F4F0' : '#0A0E27');
+      } catch (e) { /* default to dark if localStorage unavailable */ }
+    })();
+  </script>
+</head>
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
