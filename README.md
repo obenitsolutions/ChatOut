@@ -8,6 +8,8 @@ The project was built for the [DevCareer x Nomba Hackathon 2026](https://develop
 
 Payments are powered by [Nomba](https://developer.nomba.com). A merchant onboards a bank account, ChatOut verifies it and provisions a Nomba virtual account, and customers pay through Nomba hosted checkout. See **[docs/INTEGRATION_GUIDE.md](docs/INTEGRATION_GUIDE.md)** for the full integration walkthrough.
 
+> **Status: actively developed.** ChatOut is under continuous development. It is being hardened for production as the native conversational checkout for [SalesLedger](https://www.salesledger.app), our live inventory and storefront platform, so expect frequent commits, new capabilities, and refinements landing on this repository. What is here today is a working end-to-end build; more is on the way.
+
 ---
 
 ## The problem
@@ -73,6 +75,9 @@ Planned next:
 - Multi-currency conversion
 - Receipt generation
 - Split payments to per-merchant sub-accounts (production settlement)
+- Production rollout as the native checkout inside [SalesLedger](https://www.salesledger.app), validated with real merchant storefronts
+
+This list is moving quickly. The repository is updated as each piece lands, so the state here reflects ongoing work rather than a frozen submission.
 
 ## Tech stack
 

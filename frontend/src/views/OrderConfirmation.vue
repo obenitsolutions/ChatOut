@@ -3,10 +3,11 @@
  * OrderConfirmation — shown after successful order placement.
  * Displays order reference, items, and next steps.
  */
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import axios from 'axios'
 import { useCartStore } from '../stores/cartStore.js'
+import TestModeNotice from '../components/ui/TestModeNotice.vue'
 
 const route = useRoute()
 const cart = useCartStore()
@@ -21,6 +22,15 @@ const items = ref([])
 const total = ref(null)
 const currency = ref('NGN')
 const paidAt = ref(null)
+
+/* Whether the order is a confirmed, paid success. */
+const isPaid = computed(() => String(status.value).toLowerCase() === 'paid')
+const heading = computed(() => (isRealOrder.value && isPaid.value ? 'Payment successful!' : 'Order Confirmed!'))
+const subheading = computed(() =>
+  isRealOrder.value && isPaid.value
+    ? 'Your payment was successful and your order is confirmed. We\'ll process it right away.'
+    : 'Your order has been placed successfully. We\'ll process it right away.'
+)
 
 function formatPrice(amount, curr = 'NGN') {
   const value = Number(amount) || 0
@@ -70,10 +80,14 @@ onMounted(async () => {
         </svg>
       </div>
 
-      <h1 style="font-size: var(--text-h2); margin-bottom: var(--space-2);">Order Confirmed!</h1>
-      <p style="color: var(--text-muted); margin-bottom: var(--space-6);">
-        Your order has been placed successfully. We'll process it right away.
+      <h1 style="font-size: var(--text-h2); margin-bottom: var(--space-2);">{{ heading }}</h1>
+      <p style="color: var(--text-muted); margin-bottom: var(--space-4);">
+        {{ subheading }}
       </p>
+
+      <div style="display: flex; justify-content: center; margin-bottom: var(--space-6);">
+        <TestModeNotice variant="pill" />
+      </div>
 
       <!-- Order details card -->
       <div class="glass-strong" style="padding: var(--space-6); text-align: left; margin-bottom: var(--space-6);">
@@ -88,7 +102,7 @@ onMounted(async () => {
           </div>
           <div>
             <span style="font-size: var(--text-xs); color: var(--text-muted); text-transform: uppercase; letter-spacing: var(--tracking-eyebrow);">Status</span>
-            <p style="font-weight: 700; color: var(--accent-secondary);">{{ isRealOrder ? status : 'Confirmed' }}</p>
+            <p style="font-weight: 700; color: var(--accent-secondary);">{{ isRealOrder ? (isPaid ? 'Paid' : status) : 'Confirmed' }}</p>
           </div>
           <div>
             <span style="font-size: var(--text-xs); color: var(--text-muted); text-transform: uppercase; letter-spacing: var(--tracking-eyebrow);">Payment</span>

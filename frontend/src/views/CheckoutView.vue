@@ -12,6 +12,7 @@ import { useShopStore } from '../stores/shopStore.js'
 import { useCartStore } from '../stores/cartStore.js'
 import ProductGrid from '../components/shop/ProductGrid.vue'
 import Icon from '../components/ui/Icon.vue'
+import TestModeNotice from '../components/ui/TestModeNotice.vue'
 
 const shop = useShopStore()
 const cart = useCartStore()
@@ -25,8 +26,10 @@ onMounted(() => {
   if (route.params.slug) {
     shop.loadFromSlug(route.params.slug)
   } else {
-    /* Initialize shop with demo data */
-    shop.init()
+    /* Default page behaves like a real hosted merchant: load the demo
+       storefront so checkout works. loadFromSlug falls back to bundled
+       demo data if the backend is momentarily unavailable. */
+    shop.loadFromSlug('demo')
   }
   cart.hydrate()
 })
@@ -41,7 +44,7 @@ async function startCheckout() {
   checkingOut.value = true
   try {
     const items = cart.items.map((i) => ({ id: i.id, qty: i.qty }))
-    const slug = route.params.slug || shop.shop.slug || null
+    const slug = route.params.slug || shop.shop.slug || 'demo'
     const response = await axios.post('/api/checkout', {
       slug,
       items,
@@ -159,6 +162,8 @@ function formatPrice(amount, currency = 'NGN') {
               <span>Total</span>
               <span class="order-summary__total-price">{{ cart.subtotalFormatted }}</span>
             </div>
+
+            <TestModeNotice style="margin-top: var(--space-2);" />
 
             <button
               class="btn btn-primary btn-lg btn-block"

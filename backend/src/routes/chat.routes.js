@@ -74,13 +74,21 @@ let bundledProducts = null
 async function loadBundledProducts() {
   if (bundledProducts) return bundledProducts
   try {
-    const mod = await import('../../../frontend/src/data/products.json', { with: { type: 'json' } })
+    /* Prefer the backend-local copy (shipped in production). */
+    const mod = await import('../data/products.json', { with: { type: 'json' } })
     bundledProducts = mod.default || mod
     return bundledProducts
-  } catch (e) {
-    logger.warn('Bundled products unavailable:', e.message)
-    bundledProducts = []
-    return bundledProducts
+  } catch {
+    try {
+      /* Fall back to the frontend source in dev. */
+      const mod = await import('../../../frontend/src/data/products.json', { with: { type: 'json' } })
+      bundledProducts = mod.default || mod
+      return bundledProducts
+    } catch (e) {
+      logger.warn('Bundled products unavailable:', e.message)
+      bundledProducts = []
+      return bundledProducts
+    }
   }
 }
 

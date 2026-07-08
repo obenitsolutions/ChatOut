@@ -23,20 +23,31 @@ const cache = new Map()
 
 /**
  * Fetch (and cache) a shop's catalog by slug.
+ *
+ * The base URL to hit is `overrideUrl || CATALOG_PROVIDER_URL`. This lets
+ * per-merchant catalog sources (e.g. the bundled demo provider) coexist
+ * with the global host provider without special-casing callers.
+ *
  * @param {string} slug
+ * @param {string|null} [overrideUrl=null] per-merchant provider base URL
  * @returns {Promise<{ shop: Object, products: Array }>}
  */
-export async function getCatalog(slug) {
-  if (!CATALOG_PROVIDER_URL) {
+export async function getCatalog(slug, overrideUrl = null) {
+  logger.info('[catalog] fetch', { slug })
+
+  const baseUrl = overrideUrl || CATALOG_PROVIDER_URL
+  if (!baseUrl) {
     throw new Error('CATALOG_PROVIDER_URL is not configured')
   }
 
-  const cached = cache.get(slug)
+  /* Cache key includes the resolved base URL so demo vs real never collide. */
+  const cacheKey = `${baseUrl}::${slug}`
+  const cached = cache.get(cacheKey)
   if (cached && cached.expires > Date.now()) {
     return cached.data
   }
 
-  const url = `${CATALOG_PROVIDER_URL}?slug=${encodeURIComponent(slug)}`
+  const url = `${baseUrl}?slug=${encodeURIComponent(slug)}`
   const controller = new AbortController()
   const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS)
 
@@ -78,6 +89,6 @@ export async function getCatalog(slug) {
   const products = Array.isArray(json?.products) ? json.products : []
   const data = { shop, products }
 
-  cache.set(slug, { expires: Date.now() + CACHE_TTL_MS, data })
+  cache.set(cacheKey, { expires: Date.now() + CACHE_TTL_MS, data })
   return data
 }

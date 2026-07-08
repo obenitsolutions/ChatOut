@@ -1,0 +1,952 @@
+[
+  {
+    "id": "NG-ANK-001",
+    "name": "Ankara Jumpsuit Green",
+    "price": 18500.00,
+    "originalPrice": 25000.00,
+    "isOnPromotion": true,
+    "promotionEndsAt": "2026-07-20T00:00:00Z",
+    "stockQuantity": 45,
+    "isOutOfStock": false,
+    "image": "/images/products/nigeria_ankara_jumpsuit_green.jpg",
+    "category": "Clothing",
+    "description": "A stunning green Ankara jumpsuit tailored for a sleek, modern silhouette. The vibrant wax-print fabric features intricate geometric patterns that celebrate West African heritage. Perfect for weddings, parties, and upscale evening events.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Green",
+      "size": "M",
+      "material": "Ankara"
+    }
+  },
+  {
+    "id": "NG-ANK-002",
+    "name": "Ankara Peplum Dress",
+    "price": 22000.00,
+    "originalPrice": 22000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 32,
+    "isOutOfStock": false,
+    "image": "/images/products/nigeria_ankara_peplum_dress.jpg",
+    "category": "Clothing",
+    "description": "An elegant peplum dress crafted from premium Nigerian Ankara fabric with a flattering flared waistline. The bold print combines rich reds, yellows, and blues for a head-turning look. Designed with a concealed back zip and a knee-length hem for sophisticated comfort.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Multi",
+      "size": "L",
+      "material": "Ankara"
+    }
+  },
+  {
+    "id": "NG-ADR-001",
+    "name": "Adire Maxi Dress Indigo",
+    "price": 35000.00,
+    "originalPrice": 45000.00,
+    "isOnPromotion": true,
+    "promotionEndsAt": "2026-07-25T00:00:00Z",
+    "stockQuantity": 18,
+    "isOutOfStock": false,
+    "image": "/images/products/nigeria_adire_maxi_indigo.jpg",
+    "category": "Clothing",
+    "description": "A floor-length maxi dress made from hand-dyed indigo Adire fabric, showcasing the ancient Yoruba tie-dye tradition. Each piece carries unique resist-dye patterns, making no two dresses exactly alike. The relaxed fit and lightweight cotton ensure effortless elegance in warm weather.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Indigo",
+      "size": "M",
+      "material": "Adire Cotton"
+    }
+  },
+  {
+    "id": "NG-ANK-003",
+    "name": "Ankara Blazer Yellow",
+    "price": 28000.00,
+    "originalPrice": 28000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 20,
+    "isOutOfStock": false,
+    "image": "/images/products/nigeria_ankara_blazer_yellow.jpg",
+    "category": "Clothing",
+    "description": "A tailored single-breasted blazer in vibrant yellow Ankara print, cutting a sharp yet playful figure. Fully lined with a notched lapel and two-button closure for a polished fit. Pairs beautifully with neutral trousers or the matching Ankara skirt for a coordinated set.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Yellow",
+      "size": "L",
+      "material": "Ankara"
+    }
+  },
+  {
+    "id": "NG-DSH-001",
+    "name": "Dashiki Hoodie Blue",
+    "price": 15500.00,
+    "originalPrice": 15500.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 60,
+    "isOutOfStock": false,
+    "image": "/images/products/nigeria_dashiki_hoodie_blue.jpg",
+    "category": "Clothing",
+    "description": "A contemporary twist on the classic Dashiki, reimagined as a casual pullover hoodie with embroidered neckline detailing. The soft blue cotton-blend fabric offers everyday comfort while the traditional motifs keep you connected to African roots. Features a kangaroo pocket and adjustable drawstring hood.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Blue",
+      "size": "XL",
+      "material": "Cotton Blend"
+    }
+  },
+  {
+    "id": "NG-LCB-001",
+    "name": "Lace Boubou Purple",
+    "price": 42000.00,
+    "originalPrice": 55000.00,
+    "isOnPromotion": true,
+    "promotionEndsAt": "2026-07-18T00:00:00Z",
+    "stockQuantity": 10,
+    "isOutOfStock": false,
+    "image": "/images/products/nigeria_lace_boubou_purple.jpg",
+    "category": "Clothing",
+    "description": "A regal purple lace boubou featuring elaborate guipure lace overlay with scalloped edges and intricate floral embroidery. This flowing wide-sleeved gown is a statement piece for owambe parties and grand celebrations. Fully lined with a matching inner slip for modesty and comfort.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Purple",
+      "size": "L",
+      "material": "Guipure Lace"
+    }
+  },
+  {
+    "id": "NG-SEN-001",
+    "name": "Senator Navy Embroidery",
+    "price": 25000.00,
+    "originalPrice": 25000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 38,
+    "isOutOfStock": false,
+    "image": "/images/products/nigeria_senator_navy_embroidery.jpg",
+    "category": "Clothing",
+    "description": "A distinguished navy-blue Senator suit with delicate tone-on-tone embroidery along the placket and chest. Tailored from high-quality cotton for a crisp, structured drape that commands respect in any formal setting. The slim-fit trousers and knee-length kaftan top create a harmonious modern-traditional blend.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Navy",
+      "size": "M",
+      "material": "Cotton"
+    }
+  },
+  {
+    "id": "NG-VEL-001",
+    "name": "Velvet Jacket Burgundy",
+    "price": 32000.00,
+    "originalPrice": 32000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 15,
+    "isOutOfStock": false,
+    "image": "/images/products/nigeria_velvet_jacket_burgundy.jpg",
+    "category": "Clothing",
+    "description": "A luxurious burgundy velvet jacket with satin shawl lapels and a single-button closure, ideal for evening galas and wedding receptions. The plush velvet fabric catches the light beautifully, exuding quiet opulence. Wear it over a crisp white shirt and tailored trousers for a flawless finish.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Burgundy",
+      "size": "L",
+      "material": "Velvet"
+    }
+  },
+  {
+    "id": "NG-AGB-001",
+    "name": "Agbada Royal Blue",
+    "price": 85000.00,
+    "originalPrice": 85000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 5,
+    "isOutOfStock": false,
+    "image": "/images/products/nigerian_agbada_royal_blue.jpg",
+    "category": "Clothing",
+    "description": "The pinnacle of Nigerian formal attire, this royal-blue Agbada features heavy hand-embroidery across the chest, shoulders, and back. The three-piece set includes the flowing outer gown, an inner tunic, and matching trousers, all in premium cotton damask. A commanding presence reserved for kings, chiefs, and grooms on their wedding day.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Royal Blue",
+      "size": "XL",
+      "material": "Cotton Damask"
+    }
+  },
+  {
+    "id": "NG-ANK-004",
+    "name": "Ankara Kaftan",
+    "price": 20000.00,
+    "originalPrice": 20000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 25,
+    "isOutOfStock": false,
+    "image": "/images/products/nigerian_ankara_kaftan.jpg",
+    "category": "Clothing",
+    "description": "A relaxed-fit Ankara kaftan with side slits and a V-neckline, designed for breezy everyday elegance. The vibrant fabric features bold floral and tribal motifs printed on soft cotton for all-day comfort. Suitable for casual outings, beach cover-ups, and lounge wear.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Multi",
+      "size": "M",
+      "material": "Ankara"
+    }
+  },
+  {
+    "id": "NG-AGB-002",
+    "name": "Brocade Agbada Gold",
+    "price": 78000.00,
+    "originalPrice": 95000.00,
+    "isOnPromotion": true,
+    "promotionEndsAt": "2026-07-30T00:00:00Z",
+    "stockQuantity": 3,
+    "isOutOfStock": false,
+    "image": "/images/products/nigerian_brocade_agbada_gold.jpg",
+    "category": "Clothing",
+    "description": "An ultra-premium gold brocade Agbada woven with metallic threads for a luminous, regal sheen. The heavy embroidery work spans the entire chest and cascades down the front panels in symmetrical grandeur. This heirloom-quality garment is hand-finished and meant for once-in-a-lifetime ceremonial occasions.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Gold",
+      "size": "XL",
+      "material": "Brocade"
+    }
+  },
+  {
+    "id": "NG-DSH-002",
+    "name": "Dashiki Ankara Print",
+    "price": 12000.00,
+    "originalPrice": 12000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 50,
+    "isOutOfStock": false,
+    "image": "/images/products/nigerian_dashiki_ankara_print.jpg",
+    "category": "Clothing",
+    "description": "A classic Dashiki shirt in a lively Ankara print, featuring the traditional embroidered V-neckline and relaxed short sleeves. Lightweight and breathable, it is the perfect shirt for cultural festivals, family gatherings, and casual Fridays. Comes in a generous unisex cut that fits most body types.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Multi",
+      "size": "L",
+      "material": "Ankara Cotton"
+    }
+  },
+  {
+    "id": "NG-SEN-002",
+    "name": "Senator Wine",
+    "price": 23000.00,
+    "originalPrice": 29000.00,
+    "isOnPromotion": true,
+    "promotionEndsAt": "2026-07-22T00:00:00Z",
+    "stockQuantity": 28,
+    "isOutOfStock": false,
+    "image": "/images/products/nigerian_senator_wine.jpg",
+    "category": "Clothing",
+    "description": "A rich wine-coloured Senator suit with contrast stitching and a mandarin collar for a modern edge. The slim-cut trousers and precisely tailored top make it a favourite for church services, office parties, and dinner dates. Finished with subtle embroidery that catches the light without shouting.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Wine",
+      "size": "M",
+      "material": "Cotton"
+    }
+  },
+  {
+    "id": "NG-BAG-001",
+    "name": "Ankara Backpack",
+    "price": 8500.00,
+    "originalPrice": 8500.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 40,
+    "isOutOfStock": false,
+    "image": "/images/products/nigeria_ankara_backpack.jpg",
+    "category": "Bags",
+    "description": "A compact daypack wrapped in vibrant Ankara wax-print fabric with genuine leather trims and adjustable straps. The spacious main compartment and front zip pocket keep your essentials organized on the go. A stylish fusion of African print and urban utility for students and travellers alike.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Multi",
+      "size": "One Size",
+      "material": "Ankara & Leather"
+    }
+  },
+  {
+    "id": "NG-ACC-001",
+    "name": "Ankara Cap Orange",
+    "price": 3500.00,
+    "originalPrice": 3500.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 75,
+    "isOutOfStock": false,
+    "image": "/images/products/nigeria_ankara_cap_orange.jpg",
+    "category": "Accessories",
+    "description": "A stylish six-panel baseball cap covered in orange-toned Ankara fabric with a curved brim and adjustable strap at the back. Lightweight and comfortable for sunny days, it adds an instant pop of African flair to any casual outfit. One size fits most with the snapback closure.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Orange",
+      "size": "One Size",
+      "material": "Ankara Cotton"
+    }
+  },
+  {
+    "id": "NG-BAG-002",
+    "name": "Ankara Duffle Bag",
+    "price": 18000.00,
+    "originalPrice": 24000.00,
+    "isOnPromotion": true,
+    "promotionEndsAt": "2026-07-28T00:00:00Z",
+    "stockQuantity": 0,
+    "isOutOfStock": true,
+    "image": "/images/products/nigeria_ankara_duffle_bag.jpg",
+    "category": "Bags",
+    "description": "A roomy weekender duffle bag made from durable Ankara canvas with reinforced stitching and brown leather handles. The wide zippered opening reveals a striped cotton lining and multiple interior pockets for shoes and toiletries. Currently out of stock due to popular demand, restock expected soon.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Multi",
+      "size": "Large",
+      "material": "Ankara Canvas & Leather"
+    }
+  },
+  {
+    "id": "NG-FTW-001",
+    "name": "Ankara Heels Orange",
+    "price": 14000.00,
+    "originalPrice": 14000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 22,
+    "isOutOfStock": false,
+    "image": "/images/products/nigeria_ankara_heels_orange.jpg",
+    "category": "Footwear",
+    "description": "Elegant stiletto heels wrapped in orange Ankara fabric with a pointed toe and a comfortable 4-inch heel. The padded insole and ankle strap provide stability without sacrificing style. A show-stopping choice for weddings, bridal showers, and cocktail parties.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Orange",
+      "size": "39",
+      "material": "Ankara & Faux Leather"
+    }
+  },
+  {
+    "id": "NG-FTW-002",
+    "name": "Ankara Platform Red",
+    "price": 16500.00,
+    "originalPrice": 16500.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 0,
+    "isOutOfStock": true,
+    "image": "/images/products/nigeria_ankara_platform_red.jpg",
+    "category": "Footwear",
+    "description": "Bold red platform heels featuring Ankara fabric uppers and a chunky 5-inch platform sole for added height without the strain. The T-strap design and buckle closure keep your foot secure on the dance floor. Currently sold out, new stock arriving within two weeks.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Red",
+      "size": "40",
+      "material": "Ankara & Rubber"
+    }
+  },
+  {
+    "id": "NG-FTW-003",
+    "name": "Ankara Slides Multicolor",
+    "price": 7500.00,
+    "originalPrice": 9500.00,
+    "isOnPromotion": true,
+    "promotionEndsAt": "2026-07-21T00:00:00Z",
+    "stockQuantity": 55,
+    "isOutOfStock": false,
+    "image": "/images/products/nigeria_ankara_slides_multicolor.jpg",
+    "category": "Footwear",
+    "description": "Casual flat slides with wide Ankara fabric straps in a cheerful multicolour print, set on a cushioned EVA sole. Easy to slip on and off, they are the ultimate summer footwear for errands, poolside lounging, and market runs. Lightweight and packable for travel.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Multi",
+      "size": "41",
+      "material": "Ankara & EVA"
+    }
+  },
+  {
+    "id": "NG-FTW-004",
+    "name": "Ankara Slip-On Red",
+    "price": 9500.00,
+    "originalPrice": 9500.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 30,
+    "isOutOfStock": false,
+    "image": "/images/products/nigeria_ankara_slip_on_red.jpg",
+    "category": "Footwear",
+    "description": "Effortless red Ankara slip-on sneakers with elastic side gussets and a cushioned footbed for all-day wear. The vulcanized rubber sole provides grip while the vibrant print turns heads on city streets. A comfortable fusion of African textiles and contemporary casual footwear design.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Red",
+      "size": "42",
+      "material": "Ankara & Rubber"
+    }
+  },
+  {
+    "id": "NG-FTW-005",
+    "name": "Ankara Sneakers Green",
+    "price": 12500.00,
+    "originalPrice": 16000.00,
+    "isOnPromotion": true,
+    "promotionEndsAt": "2026-07-19T00:00:00Z",
+    "stockQuantity": 35,
+    "isOutOfStock": false,
+    "image": "/images/products/nigeria_ankara_sneakers_green.jpg",
+    "category": "Footwear",
+    "description": "Lace-up sneakers crafted from green Ankara fabric with white rubber toe caps and soles for a retro sporty look. Breathable textile lining and a removable insole make them great for long walks and weekend adventures. A unique way to wear African print casually.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Green",
+      "size": "43",
+      "material": "Ankara & Rubber"
+    }
+  },
+  {
+    "id": "NG-FTW-006",
+    "name": "Aso Oke Heels Gold",
+    "price": 25000.00,
+    "originalPrice": 25000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 8,
+    "isOutOfStock": false,
+    "image": "/images/products/nigeria_aso_oke_heels_gold.jpg",
+    "category": "Footwear",
+    "description": "Exquisite gold heels wrapped in handwoven Aso Oke fabric, the traditional Yoruba prestige textile. Metallic threads woven through the fabric shimmer with every step, making them the ultimate wedding and owambe shoe. The 4-inch stiletto heel and pointed toe deliver red-carpet glamour.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Gold",
+      "size": "38",
+      "material": "Aso Oke & Leather"
+    }
+  },
+  {
+    "id": "NG-FTW-007",
+    "name": "Beaded Slippers Multi",
+    "price": 11000.00,
+    "originalPrice": 11000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 19,
+    "isOutOfStock": false,
+    "image": "/images/products/nigeria_beaded_slippers_multi.jpg",
+    "category": "Footwear",
+    "description": "Hand-beaded leather slippers adorned with colourful seed beads in intricate geometric patterns. Each pair is handcrafted by Northern Nigerian artisans using techniques passed down through generations. The soft leather footbed moulds to your feet over time for a custom fit.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Multi",
+      "size": "40",
+      "material": "Leather & Beads"
+    }
+  },
+  {
+    "id": "NG-FTW-008",
+    "name": "Brocade Loafers Wine",
+    "price": 15500.00,
+    "originalPrice": 15500.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 12,
+    "isOutOfStock": false,
+    "image": "/images/products/nigeria_brocade_loafers_wine.jpg",
+    "category": "Footwear",
+    "description": "Sophisticated wine-coloured brocade loafers with a horsebit detail and stacked leather heel. The jacquard-woven upper features subtle floral motifs that reveal themselves under light. A refined choice for traditional weddings, church, and formal Nigerian events.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Wine",
+      "size": "43",
+      "material": "Brocade & Leather"
+    }
+  },
+  {
+    "id": "NG-FTW-009",
+    "name": "Leather Loafers Brown",
+    "price": 18000.00,
+    "originalPrice": 18000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 26,
+    "isOutOfStock": false,
+    "image": "/images/products/nigeria_leather_loafers_brown.jpg",
+    "category": "Footwear",
+    "description": "Classic brown leather loafers hand-stitched in Kano using full-grain cowhide that ages beautifully with wear. The Goodyear-welted construction ensures durability while the cushioned leather insole provides day-long comfort. A versatile shoe that transitions from the boardroom to owambe with ease.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Brown",
+      "size": "42",
+      "material": "Full-Grain Leather"
+    }
+  },
+  {
+    "id": "NG-FTW-010",
+    "name": "Leather Pumps Nude",
+    "price": 13500.00,
+    "originalPrice": 17000.00,
+    "isOnPromotion": true,
+    "promotionEndsAt": "2026-07-24T00:00:00Z",
+    "stockQuantity": 17,
+    "isOutOfStock": false,
+    "image": "/images/products/nigeria_leather_pumps_nude.jpg",
+    "category": "Footwear",
+    "description": "Timeless nude leather pumps with a 3-inch kitten heel, pointed toe, and a discreetly cushioned insole. The neutral tone elongates the legs and complements every outfit from Ankara skirts to tailored trousers. A wardrobe essential that never goes out of style.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Nude",
+      "size": "39",
+      "material": "Leather"
+    }
+  },
+  {
+    "id": "NG-FTW-011",
+    "name": "Native Shoes Gold",
+    "price": 13000.00,
+    "originalPrice": 13000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 0,
+    "isOutOfStock": true,
+    "image": "/images/products/nigeria_native_shoes_gold.jpg",
+    "category": "Footwear",
+    "description": "Handcrafted gold-toned native shoes with intricate filigree cutwork on premium leather, a staple of Nigerian formal fashion. The slip-on design features a slightly pointed toe and a low block heel for comfort during long ceremonies. Currently out of stock, artisans are crafting the next batch.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Gold",
+      "size": "41",
+      "material": "Leather"
+    }
+  },
+  {
+    "id": "NG-FTW-012",
+    "name": "Velvet Pumps Burgundy",
+    "price": 16000.00,
+    "originalPrice": 16000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 14,
+    "isOutOfStock": false,
+    "image": "/images/products/nigeria_velvet_pumps_burgundy.jpg",
+    "category": "Footwear",
+    "description": "Rich burgundy velvet pumps with a pointed toe, delicate ankle strap, and a 4-inch stiletto heel. The plush velvet upper and gold-tone buckle create a look of understated luxury fit for formal dinners and gala nights. Pairs perfectly with lace and Ankara evening gowns.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Burgundy",
+      "size": "38",
+      "material": "Velvet & Leather"
+    }
+  },
+  {
+    "id": "NG-FTW-013",
+    "name": "Velvet Slippers Black",
+    "price": 8500.00,
+    "originalPrice": 11000.00,
+    "isOnPromotion": true,
+    "promotionEndsAt": "2026-07-26T00:00:00Z",
+    "stockQuantity": 48,
+    "isOutOfStock": false,
+    "image": "/images/products/nigeria_velvet_slippers_black.jpg",
+    "category": "Footwear",
+    "description": "Understated black velvet slippers with a quilted satin lining and a flexible rubber sole for indoor and light outdoor use. The embroidered crest on the vamp adds a subtle touch of prestige. Perfect as host slippers for house parties, weddings, and relaxed evenings.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Black",
+      "size": "42",
+      "material": "Velvet & Rubber"
+    }
+  },
+  {
+    "id": "GH-KNT-001",
+    "name": "Kente Strip Shirt",
+    "price": 15000.00,
+    "originalPrice": 15000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 33,
+    "isOutOfStock": false,
+    "image": "/images/products/ghana_kente_strip_shirt.jpg",
+    "category": "Clothing",
+    "description": "A contemporary short-sleeve shirt featuring vertical strips of handwoven Ghanaian Kente cloth in bright yellows, greens, and reds. Each strip is woven on a traditional loom by Ewe artisans in the Volta Region. The relaxed camp-collar cut makes it ideal for casual Fridays and cultural events.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Multi",
+      "size": "L",
+      "material": "Kente"
+    }
+  },
+  {
+    "id": "GH-KNT-002",
+    "name": "Kente Wrapper Set",
+    "price": 38000.00,
+    "originalPrice": 48000.00,
+    "isOnPromotion": true,
+    "promotionEndsAt": "2026-07-31T00:00:00Z",
+    "stockQuantity": 7,
+    "isOutOfStock": false,
+    "image": "/images/products/ghana_kente_wrapper_set.jpg",
+    "category": "Clothing",
+    "description": "A full three-piece women's Kente set comprising a fitted top, a floor-length wrapper skirt, and a matching head tie. The authentic handwoven silk-cotton Kente features the revered 'Sika Futuro' (gold dust) pattern symbolizing wealth and royalty. Draped and sewn by skilled seamstresses in Kumasi for a flawless fit.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Multi",
+      "size": "M",
+      "material": "Kente Silk-Cotton"
+    }
+  },
+  {
+    "id": "GH-KNT-003",
+    "name": "Modern Kente Suit",
+    "price": 55000.00,
+    "originalPrice": 55000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 4,
+    "isOutOfStock": false,
+    "image": "/images/products/ghana_modern_kente_suit.jpg",
+    "category": "Clothing",
+    "description": "A sharply tailored two-piece suit cut from premium handwoven Kente, merging Ghanaian heritage with modern European silhouette. The notched-lapel blazer and slim trousers are fully lined in satin for a luxurious interior finish. An investment piece for grooms, executives, and dignitaries who want to stand out with cultural pride.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Multi",
+      "size": "XL",
+      "material": "Kente"
+    }
+  },
+  {
+    "id": "GH-ANK-001",
+    "name": "Ankara Skirt & Blouse",
+    "price": 19000.00,
+    "originalPrice": 19000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 21,
+    "isOutOfStock": false,
+    "image": "/images/products/ghana_ankara_skirt_blouse.jpg",
+    "category": "Clothing",
+    "description": "A chic coordinating set of a peplum blouse and a high-waist pencil skirt in vivid Ghanaian Ankara print with bold yellow and red motifs. The blouse features puffed sleeves and a sweetheart neckline, while the skirt has a back slit for easy movement. Perfect for church, brunch dates, and office parties.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Multi",
+      "size": "M",
+      "material": "Ankara"
+    }
+  },
+  {
+    "id": "GH-SMK-001",
+    "name": "Smock Fugu Grey",
+    "price": 17000.00,
+    "originalPrice": 17000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 16,
+    "isOutOfStock": false,
+    "image": "/images/products/ghana_smock_fugu_grey.jpg",
+    "category": "Clothing",
+    "description": "An authentic Northern Ghanaian smock (fugu) in charcoal grey, handwoven from thick cotton strips and embroidered with white geometric motifs across the chest. This traditional garment is a symbol of Ghanaian identity, worn by chiefs and everyday men alike. The loose, comfortable fit works well over trousers or jeans.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Grey",
+      "size": "L",
+      "material": "Handwoven Cotton"
+    }
+  },
+  {
+    "id": "GH-ACC-001",
+    "name": "Kente Bucket Hat",
+    "price": 5500.00,
+    "originalPrice": 5500.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 62,
+    "isOutOfStock": false,
+    "image": "/images/products/ghana_kente_bucket_hat.jpg",
+    "category": "Accessories",
+    "description": "A trendy bucket hat covered in authentic Kente strips with a soft cotton lining and a medium brim for sun protection. It folds flat for easy packing, making it a great travel companion for festivals and vacations. One size fits most with a comfortable unstructured crown.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Multi",
+      "size": "One Size",
+      "material": "Kente & Cotton"
+    }
+  },
+  {
+    "id": "GH-ACC-002",
+    "name": "Kente Scarf Long",
+    "price": 6000.00,
+    "originalPrice": 8000.00,
+    "isOnPromotion": true,
+    "promotionEndsAt": "2026-07-23T00:00:00Z",
+    "stockQuantity": 44,
+    "isOutOfStock": false,
+    "image": "/images/products/ghana_kente_scarf_long.jpg",
+    "category": "Accessories",
+    "description": "A long, draping scarf woven from silk-cotton Kente in the revered 'Obaakofo Mmu Man' (one person does not rule a nation) pattern. The lightweight fabric sits elegantly around the neck or shoulders without bulk. A meaningful accessory that carries deep Akan proverbs in its very threads.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Multi",
+      "size": "One Size",
+      "material": "Kente Silk-Cotton"
+    }
+  },
+  {
+    "id": "GH-FTW-001",
+    "name": "Kente Loafers Multi",
+    "price": 14000.00,
+    "originalPrice": 14000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 11,
+    "isOutOfStock": false,
+    "image": "/images/products/ghana_kente_loafers_multi.jpg",
+    "category": "Footwear",
+    "description": "Handsome loafers with genuine Kente fabric uppers in a striking multicolour weave, set on durable leather soles. The penny-loafer strap and rounded toe offer a timeless shape with a distinctly Ghanaian twist. Ideal for weddings, church services, and smart-casual occasions.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Multi",
+      "size": "43",
+      "material": "Kente & Leather"
+    }
+  },
+  {
+    "id": "GH-FTW-002",
+    "name": "Leather Sandals Gold",
+    "price": 12000.00,
+    "originalPrice": 12000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 23,
+    "isOutOfStock": false,
+    "image": "/images/products/ghana_leather_sandals_gold.jpg",
+    "category": "Footwear",
+    "description": "Handcrafted gold leather sandals with criss-cross straps and a lightly padded footbed, made by artisans in Kumasi's Kejetia market. The metallic finish adds a dressy touch while the flat sole ensures all-day comfort for weddings and outdoor events. Buckle closure at the ankle for a secure fit.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Gold",
+      "size": "40",
+      "material": "Leather"
+    }
+  },
+  {
+    "id": "GH-FTW-003",
+    "name": "Ankara Mules Yellow",
+    "price": 10000.00,
+    "originalPrice": 13000.00,
+    "isOnPromotion": true,
+    "promotionEndsAt": "2026-07-27T00:00:00Z",
+    "stockQuantity": 31,
+    "isOutOfStock": false,
+    "image": "/images/products/ghana_ankara_mules_yellow.jpg",
+    "category": "Footwear",
+    "description": "Sunny yellow Ankara mules with a pointed toe and a low block heel, easy to slide into for instant style. The backless design makes them perfect for quick errands, beach trips, and warm-weather outings. A cheerful addition to any African-print wardrobe.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Yellow",
+      "size": "39",
+      "material": "Ankara & Faux Leather"
+    }
+  },
+  {
+    "id": "KE-KIT-001",
+    "name": "Kitenge Maxi Dress",
+    "price": 24000.00,
+    "originalPrice": 24000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 27,
+    "isOutOfStock": false,
+    "image": "/images/products/kenya_kitenge_maxi_dress.jpg",
+    "category": "Clothing",
+    "description": "A sweeping maxi dress made from bold Kenyan Kitenge fabric with large-scale floral and geometric motifs in vivid shades. The fitted bodice and flared skirt create a universally flattering A-line silhouette. Lightweight cotton ensures comfort under the East African sun at garden parties and evening dinners.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Multi",
+      "size": "M",
+      "material": "Kitenge Cotton"
+    }
+  },
+  {
+    "id": "KE-KIT-002",
+    "name": "Kitenge Blazer",
+    "price": 26000.00,
+    "originalPrice": 26000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 13,
+    "isOutOfStock": false,
+    "image": "/images/products/kenya_kitenge_blazer.jpg",
+    "category": "Clothing",
+    "description": "A double-breasted blazer tailored from vibrant Kenyan Kitenge fabric, featuring gold-tone buttons and peak lapels for a power-dressing silhouette. The cotton-blend fabric holds its shape while remaining breathable in tropical climates. Command the boardroom or the red carpet with equal confidence.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Multi",
+      "size": "L",
+      "material": "Kitenge Cotton"
+    }
+  },
+  {
+    "id": "KE-KNG-001",
+    "name": "Kanga Dress Orange",
+    "price": 14000.00,
+    "originalPrice": 18000.00,
+    "isOnPromotion": true,
+    "promotionEndsAt": "2026-07-20T00:00:00Z",
+    "stockQuantity": 36,
+    "isOutOfStock": false,
+    "image": "/images/products/kenya_kanga_dress_orange.jpg",
+    "category": "Clothing",
+    "description": "A playful orange Kanga wrap dress printed with Swahili proverbs along the border, a hallmark of East African coastal culture. The wrap-front design adjusts to your shape, and the short puff sleeves add a feminine touch. Perfect for beach weddings, safari lodge dinners, and resort wear.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Orange",
+      "size": "S",
+      "material": "Kanga Cotton"
+    }
+  },
+  {
+    "id": "KE-MAA-001",
+    "name": "Maasai Shuka Wrap",
+    "price": 16000.00,
+    "originalPrice": 16000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 24,
+    "isOutOfStock": false,
+    "image": "/images/products/kenya_maasai_shuka_wrap.jpg",
+    "category": "Clothing",
+    "description": "An authentic Maasai Shuka blanket wrap in bold red-and-black stripes, traditionally worn by Maasai warriors and now reimagined as a versatile outer layer. The thick, durable cotton provides warmth on cool evenings and makes a striking fashion statement. Can be worn as a shawl, scarf, or belted as a dress.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Red & Black",
+      "size": "One Size",
+      "material": "Shuka Cotton"
+    }
+  },
+  {
+    "id": "KE-BAG-001",
+    "name": "Kitenge Tote Bag",
+    "price": 9000.00,
+    "originalPrice": 9000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 52,
+    "isOutOfStock": false,
+    "image": "/images/products/kenya_kitenge_tote_bag.jpg",
+    "category": "Bags",
+    "description": "A large-capacity tote bag made from sturdy Kenyan Kitenge fabric with reinforced leather handles and a magnetic snap closure. The interior features a zippered pocket and a phone sleeve to keep small items secure. Take it to the market, the beach, or the library in unmistakable East African style.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Multi",
+      "size": "Large",
+      "material": "Kitenge & Leather"
+    }
+  },
+  {
+    "id": "KE-FTW-001",
+    "name": "Maasai Leather Sandals",
+    "price": 10500.00,
+    "originalPrice": 10500.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 0,
+    "isOutOfStock": true,
+    "image": "/images/products/kenya_maasai_leather_sandals.jpg",
+    "category": "Footwear",
+    "description": "Hand-stitched sandals made from genuine cowhide leather and embellished with Maasai beadwork in vivid reds, blues, and whites. Each pair is crafted by Maasai women's cooperatives in Kajiado County, supporting community livelihoods. Currently sold out due to high international demand; more pairs are being handcrafted.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Multi",
+      "size": "41",
+      "material": "Leather & Beads"
+    }
+  },
+  {
+    "id": "KE-FTW-002",
+    "name": "Handwoven Sandals Brown",
+    "price": 8000.00,
+    "originalPrice": 10000.00,
+    "isOnPromotion": true,
+    "promotionEndsAt": "2026-07-29T00:00:00Z",
+    "stockQuantity": 42,
+    "isOutOfStock": false,
+    "image": "/images/products/kenya_handwoven_sandals_brown.jpg",
+    "category": "Footwear",
+    "description": "Earthy brown sandals with handwoven sisal straps and a recycled tyre sole, created by Kenyan coastal artisans using sustainable materials. The natural fibres soften with wear while the rugged sole provides excellent traction on varied terrain. A comfortable, eco-conscious choice for everyday wear.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Brown",
+      "size": "42",
+      "material": "Sisal & Recycled Rubber"
+    }
+  },
+  {
+    "id": "ZA-SHW-001",
+    "name": "Shweshwe Dress",
+    "price": 21000.00,
+    "originalPrice": 21000.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 29,
+    "isOutOfStock": false,
+    "image": "/images/products/south_africa_shweshwe_dress.jpg",
+    "category": "Clothing",
+    "description": "A fit-and-flare dress made from genuine indigo Shweshwe fabric, the iconic South African cotton print with a distinctive starchy finish and intricate geometric designs. The dress features a sweetheart neckline, cap sleeves, and a full circle skirt that moves beautifully. A timeless piece that honours Xhosa and Sotho textile heritage.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Indigo",
+      "size": "M",
+      "material": "Shweshwe Cotton"
+    }
+  },
+  {
+    "id": "ZA-MAD-001",
+    "name": "Madiba Shirt",
+    "price": 13500.00,
+    "originalPrice": 13500.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 46,
+    "isOutOfStock": false,
+    "image": "/images/products/south_africa_madiba_shirt.jpg",
+    "category": "Clothing",
+    "description": "A relaxed short-sleeve shirt in colourful Shweshwe-inspired print, famously popularised by Nelson Mandela and now known globally as the Madiba shirt. The loose camp collar and straight hem make it breathable and dignified for public appearances, braais, and cultural celebrations. A piece of South African history you can wear.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Multi",
+      "size": "XL",
+      "material": "Cotton"
+    }
+  },
+  {
+    "id": "ZA-XHO-001",
+    "name": "Xhosa Traditional Dress",
+    "price": 30000.00,
+    "originalPrice": 40000.00,
+    "isOnPromotion": true,
+    "promotionEndsAt": "2026-08-05T00:00:00Z",
+    "stockQuantity": 9,
+    "isOutOfStock": false,
+    "image": "/images/products/south_africa_xhosa_traditional_dress.jpg",
+    "category": "Clothing",
+    "description": "A stunning modern interpretation of the Xhosa umbhaco traditional dress, featuring black and white geometric Shweshwe panels with orange accent piping. The structured bodice and long full skirt are accented with ribbon trim, honouring the ceremonial dress of Xhosa women. Ideal for traditional weddings, umgidi celebrations, and heritage day events.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Black & White",
+      "size": "L",
+      "material": "Shweshwe Cotton"
+    }
+  },
+  {
+    "id": "ZA-BAG-001",
+    "name": "Shweshwe Crossbody",
+    "price": 7500.00,
+    "originalPrice": 7500.00,
+    "isOnPromotion": false,
+    "promotionEndsAt": null,
+    "stockQuantity": 34,
+    "isOutOfStock": false,
+    "image": "/images/products/south_africa_shweshwe_crossbody.jpg",
+    "category": "Bags",
+    "description": "A compact crossbody bag wrapped in indigo Shweshwe fabric with an adjustable leather strap and a secure zip-top closure. The front flap pocket provides quick access to your phone and keys while the main compartment holds daily essentials. Small but mighty, it brings South African heritage to your everyday carry.",
+    "currency": "NGN",
+    "coreProperties": {
+      "color": "Indigo",
+      "size": "Small",
+      "material": "Shweshwe & Leather"
+    }
+  }
+]

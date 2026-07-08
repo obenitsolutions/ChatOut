@@ -25,7 +25,9 @@ import banksRoutes from './routes/banks.routes.js'
 import merchantsRoutes from './routes/merchants.routes.js'
 import storefrontRoutes from './routes/storefront.routes.js'
 import checkoutRoutes from './routes/checkout.routes.js'
+import demoRoutes from './routes/demo.routes.js'
 import { adminAuth } from './middleware/adminAuth.js'
+import { httpLogger } from './middleware/httpLogger.js'
 
 export function createApp() {
   const app = express()
@@ -39,17 +41,8 @@ export function createApp() {
   /* ---- Body parsing ---- */
   app.use(express.json({ limit: '1mb' }))
 
-  /* ---- Request logging ---- */
-  app.use((req, res, next) => {
-    const start = Date.now()
-    res.on('finish', () => {
-      const ms = Date.now() - start
-      if (req.path.startsWith('/api/')) {
-        logger.debug(`${req.method} ${req.path} ${res.statusCode} ${ms}ms`)
-      }
-    })
-    next()
-  })
+  /* ---- Request logging (one line per request; scales severity by status) ---- */
+  app.use(httpLogger)
 
   /* ---- API routes (must be registered BEFORE static middleware) ---- */
   app.use('/api/chat', chatRoutes)
@@ -60,6 +53,7 @@ export function createApp() {
   app.use('/api/merchants', merchantsRoutes)
   app.use('/api/storefront', storefrontRoutes)
   app.use('/api/checkout', checkoutRoutes)
+  app.use('/api/demo', demoRoutes)
   app.use('/api/admin', adminAuth, adminRoutes)
 
   /* ---- Health check ---- */

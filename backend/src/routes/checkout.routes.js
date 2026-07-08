@@ -22,21 +22,26 @@ router.post('/', async (req, res) => {
   try {
     const { slug, items, customerEmail } = req.body ?? {}
 
+    logger.info('[checkout] start', { slug, itemCount: items?.length })
+
     if (!slug || typeof slug !== 'string') {
+      logger.warn('[checkout] slug_required', { slug })
       return res.status(400).json({ ok: false, error: 'slug_required' })
     }
     if (!Array.isArray(items) || items.length === 0) {
+      logger.warn('[checkout] items_required', { slug })
       return res.status(400).json({ ok: false, error: 'items_required' })
     }
 
     const merchant = await getMerchantBySlug(slug)
     if (!merchant) {
+      logger.warn('[checkout] merchant_not_configured', { slug })
       return res
         .status(404)
         .json({ ok: false, error: 'merchant_not_configured' })
     }
 
-    const catalog = await getCatalog(slug)
+    const catalog = await getCatalog(slug, merchant.catalog_url || null)
     const productMap = new Map(
       (catalog.products || []).map((p) => [String(p.id), p]),
     )
@@ -47,11 +52,13 @@ router.post('/', async (req, res) => {
       const qty = Number(item?.qty)
       const product = productMap.get(String(item?.id))
       if (!product) {
+        logger.warn('[checkout] unknown_product', { slug, id: item?.id })
         return res
           .status(400)
           .json({ ok: false, error: `unknown_product:${item?.id}` })
       }
       if (!Number.isFinite(qty) || qty <= 0) {
+        logger.warn('[checkout] invalid_qty', { slug, id: item?.id })
         return res
           .status(400)
           .json({ ok: false, error: `invalid_qty:${item?.id}` })
@@ -100,9 +107,15 @@ router.post('/', async (req, res) => {
       checkoutLink: nomba.checkoutLink,
     })
 
-    res.json({ ok: true, reference, checkoutLink: nomba.checkoutLink })
+    const testMode = (process.env.NOMBA_BASE_URL || '').includes('sandbox')
+    logger.info('[checkout] success', {
+      slug,
+      reference,
+      nombaOrderReference: nomba.orderReference,
+    })
+    res.json({ ok: true, reference, checkoutLink: nomba.checkoutLink, testMode })
   } catch (err) {
-    logger.error('Checkout failed', { error: err.message })
+    logger.error('Checkout failed', { error: err.message, stack: err.stack })
     res.status(500).json({ ok: false, error: err.message })
   }
 })
@@ -113,7 +126,8 @@ router.get('/order/:reference', async (req, res) => {
     if (!order) {
       return res.status(404).json({ ok: false, error: 'order_not_found' })
     }
-    res.json({ ok: true, order })
+    const testMode = (process.env.NOMBA_BASE_URL || '').includes('sandbox')
+    res.json({ ok: true, order, testMode })
   } catch (err) {
     res.status(500).json({ ok: false, error: err.message })
   }

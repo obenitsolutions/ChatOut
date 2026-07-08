@@ -14,7 +14,14 @@ let productList = null
 export async function getProductIndex() {
   if (productIndex) return productIndex
   try {
-    const mod = await import('../../../frontend/src/data/products.json', { with: { type: 'json' } })
+    /* Prefer the backend-local copy (shipped in production); fall back to
+     * the frontend source in dev. */
+    let mod
+    try {
+      mod = await import('../data/products.json', { with: { type: 'json' } })
+    } catch {
+      mod = await import('../../../frontend/src/data/products.json', { with: { type: 'json' } })
+    }
     const products = mod.default || mod
     productList = products
     productIndex = new Map(products.map((p) => [p.id, p]))
